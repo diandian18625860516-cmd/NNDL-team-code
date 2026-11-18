@@ -1,0 +1,33 @@
+{
+  "source_script": "https://github.com/MaticFuc/SALAD/blob/main/download_pretrained_models.sh",
+  "archive_url": "https://drive.usercontent.google.com/download?id=1KhhzHw6-oP5H14e0gG_DkXpQijM9_M0D&export=download&confirm=t",
+  "archive_bytes": 2408492486,
+  "verified": "ZIP CRC-32 and uncompressed length",
+  "members": [
+    {
+      "path": "juice_bottle/autoencoder_final.pth",
+      "bytes": 4405058,
+      "zip_crc32": "3059fd0e"
+    },
+    {
+      "path": "juice_bottle/teacher_final.pth",
+      "bytes": 32114834,
+      "zip_crc32": "9ad58ce8"
+    },
+    {
+      "path": "juice_bottle/student_final.pth",
+      "bytes": 46470290,
+      "zip_crc32": "48ddd405"
+    },
+    {
+      "path": "juice_bottle/comp_autoencoder_final.pth",
+      "bytes": 126408338,
+      "zip_crc32": "22023981"
+    },
+    {
+      "path": "juice_bottle/comp_unet_final.pth",
+      "bytes": 51145110,
+      "zip_crc32": "ead363a8"
+    }
+  ]
+}

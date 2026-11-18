@@ -1,0 +1,90 @@
+{
+  "run_id": "salad_juice_bottle_author_01",
+  "model": "SALAD",
+  "category": "juice_bottle",
+  "stage": "author_weights",
+  "seed": 42,
+  "initialization": {
+    "source_script": "https://github.com/MaticFuc/SALAD/blob/main/download_pretrained_models.sh",
+    "archive_url": "https://drive.usercontent.google.com/download?id=1KhhzHw6-oP5H14e0gG_DkXpQijM9_M0D&export=download&confirm=t",
+    "archive_bytes": 2408492486,
+    "verified": "ZIP CRC-32 and uncompressed length",
+    "members": [
+      {
+        "path": "juice_bottle/autoencoder_final.pth",
+        "bytes": 4405058,
+        "zip_crc32": "3059fd0e"
+      },
+      {
+        "path": "juice_bottle/teacher_final.pth",
+        "bytes": 32114834,
+        "zip_crc32": "9ad58ce8"
+      },
+      {
+        "path": "juice_bottle/student_final.pth",
+        "bytes": 46470290,
+        "zip_crc32": "48ddd405"
+      },
+      {
+        "path": "juice_bottle/comp_autoencoder_final.pth",
+        "bytes": 126408338,
+        "zip_crc32": "22023981"
+      },
+      {
+        "path": "juice_bottle/comp_unet_final.pth",
+        "bytes": 51145110,
+        "zip_crc32": "ead363a8"
+      }
+    ]
+  },
+  "code_version": {
+    "team_snapshot": "NNDL-team-code-main.zip",
+    "source": "vendor/salad",
+    "upstream_commit": null,
+    "adapter": "run_salad_author.py; exports original scores, zero Windows workers, Unicode mask reading, lazy training-only imgaug, trusted layer allowlist"
+  },
+  "score_name": "author_fusion",
+  "score_direction": "higher_is_anomalous",
+  "score_definition": "max(normalized appearance map) + normalized Mahalanobis score + max(normalized composition map)",
+  "data_split": {
+    "counts": {
+      "train": 335,
+      "validation": 54,
+      "test": 330
+    },
+    "train": "teacher statistics and global distribution",
+    "validation": "score/map calibration",
+    "test": "all official images"
+  },
+  "preprocessing": "Author RGB Resize(256,256), ImageNet normalization, supplied 6-channel one-hot composition map",
+  "steps": 0,
+  "sample_budget": {
+    "train": 335,
+    "validation": 54,
+    "test": 330
+  },
+  "branch_scores": [
+    "appearance_score",
+    "mahalanobis_score",
+    "composition_score"
+  ],
+  "map_location": null,
+  "original_results": "predictions.csv; results.csv (author macro AUROC in percent)",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "cuda": "12.8",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "pillow": "11.2.1",
+    "pandas": "2.2.3",
+    "opencv-python-headless": "4.10.0.84",
+    "positional-encodings": "6.0.4"
+  },
+  "start": "2026-11-19T02:09:38.779467+08:00",
+  "elapsed_seconds": 102.17199999999866,
+  "peak_cuda_allocated_mib": 3330.2841796875
+}
