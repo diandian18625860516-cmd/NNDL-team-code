@@ -1,0 +1,21 @@
+{
+  "status": "template_not_run",
+  "run_id": null,
+  "model": null,
+  "category": null,
+  "stage": null,
+  "code_commit": null,
+  "source_manifest_sha256": null,
+  "composition_representation": null,
+  "initialization_source": null,
+  "initialization_sha256": null,
+  "checkpoint_source_exposure": null,
+  "train_steps": null,
+  "seed": null,
+  "auxiliary_data_setting": null,
+  "environment_record": null,
+  "score_branch": null,
+  "score_direction": null,
+  "predictions_file": null,
+  "metrics": null
+}

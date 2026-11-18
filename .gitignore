@@ -1,0 +1,48 @@
+# Python / editor / OS
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/
+
+# Machine-specific settings and credentials
+*.local.json
+*.local.yaml
+*.local.yml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Large inputs and experiment artifacts
+/data/*
+!/data/README.md
+/weights/*
+!/weights/README.md
+/outputs/*
+!/outputs/README.md
+/vendor/salad/data/
+/vendor/salad/results/
+/vendor/salad/models/*
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.tgz
+*.log
+
+# Optional local baseline checkout; do not nest another repository in commits
+/external/

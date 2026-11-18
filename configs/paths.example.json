@@ -1,0 +1,4 @@
+{
+  "dataset_root": "data/mvtec_loco",
+  "composition_root": "data/mvtec_loco_composition_maps"
+}
