@@ -1,0 +1,10 @@
+﻿item,owner,current_state,evidence,action
+PatchCore SB 基线,C,已核验保留,逐图分数+运行 JSON（patchcore_screw_bag_full_01）+ summary.csv 指标：54.7984/87.6849/71.2416/67.1121,直接复用为经典基线；注意它不是改进 SALAD 的受控对照
+SALAD 作者权重（SB）,E,报告级数字：93.95/96.23/95.09（macro 95.09）,进度报告表 3；无逐图 CSV,"导出逐图分数 CSV + 六字段运行 JSON → C 复算后方可进""已核验""表"
+SALAD 20k 预算训练（SB）,E,描述性：84.89/95.13/90.01,进度报告 §5.3（约 6.7 h @ T4；ImageNette2 替代；损失 31.07→3.53）,不进正式比较；若作各组共同起点须找回并核实检查点/日志/数据使用记录
+SALAD 400 步检查（SB）,E,检查性：macro 78.94,进度报告 §5.3,不进正式比较（仅证明保存/恢复与损失下降）
+B 数据清单,B,PP+SB train/good 官方划分已交付（372/360 全覆盖、逐图交错）,deliverables.zip：pushpins_split_manifest.csv、screw_bag_split_manifest.csv,其余三类清单、组成图映射与规则验收记录待补
+D 配对清单,D,v2.1 已交付：485 对（PP 390 / SB 95），QA 全过、隔离检查 0 违规,D_pair_deliverable_v2.1.zip：pair_manifest.json、qa_report.json、confinement_summary.json,review_status 全部 pending → B 按 review_guide 验收；SB 264 张源图标注待续（VLM 限流）
+R1/R2 固定样本,D,已固定 70 条 SB train 违规输入（sha256 记录）,r1_r2_sample_list.json（pair_id、invalid_path、invalid_op、sha256）,R1/R2 必须消费同批样本；两组配置只差排序开关
+C 评价入口,C,已实现（B/D/E→C 约定 v1）并已接 PC-SB,README（约定 v1）+ summary.csv,待接 E 的 SALAD 逐图导出与 D 的配对输入（本协议 paired_diagnosis_metrics.json）
+A 协议与总表,A,本包交付（实验总表/配对诊断协议/RQ-证据映射/展示提纲/报告骨架/时间线）,AI3003_A_protocol_deliverable_v1.zip,Day3 与 E 确认步数与机时后锁定预算行；Day11 冻结
