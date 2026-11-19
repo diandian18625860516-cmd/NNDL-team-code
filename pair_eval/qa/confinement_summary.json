@@ -1,0 +1,6 @@
+{
+  "check": "geometric_confinement",
+  "description": "原图与合法/违规变体的全部差异像素均落在清单 edit_region 声明的区域内（含 ±3px 缩放余量）；区域外不允许出现任何标签变化。",
+  "pairs_checked": 485,
+  "violations": 0
+}

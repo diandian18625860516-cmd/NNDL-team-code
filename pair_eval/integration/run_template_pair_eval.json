@@ -1,0 +1,33 @@
+{
+  "_comment": "E 的配对运行 JSON 模板（按 B/D/E→C 交付约定 v1）。同一文件同时携带通用六字段与配对评价必需字段；null 表示待 E 填写，不能凭默认值补成已知。",
+  "run_id": null,
+  "model": "SALAD",
+  "category": "screw_bag",
+  "stage": null,
+  "score_name": "composition_branch_image_score",
+  "score_direction": "higher_is_anomalous",
+  "initialization": null,
+  "code_version": null,
+  "seed": null,
+  "data_split": "D_deliverable/source_status.json (purpose assignment)",
+  "preprocessing": "composition map 256x256, single channel integer labels",
+  "steps": null,
+  "sample_budget": null,
+  "score_definition": null,
+  "branch_scores": null,
+  "map_location": null,
+  "original_results": null,
+  "representation": "composition_map",
+  "score_branch": "composition",
+  "model_seen_source_paths": [
+    "_REQUIRED: 起点检查点训练中见过的完整原始 RGB 路径数组；v2 起全部配对源图都在 train/good（SALAD train 划分，必然被见过），必须完整列入；SALAD 官方训练同时使用 validation 划分，若见过也须列入。"
+  ],
+  "seen_sources_complete": true,
+  "protocol_frozen": null,
+  "pair_manifest": "pair_manifest.json",
+  "pair_selection": {
+    "category": "screw_bag",
+    "purpose": "final_diagnostic",
+    "review_status": "approved"
+  }
+}

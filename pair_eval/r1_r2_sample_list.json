@@ -1,0 +1,636 @@
+{
+ "description": "R1/R2 \u6392\u5e8f\u63a7\u5236\u5b9e\u9a8c\u7684\u56fa\u5b9a\u8fdd\u89c4\u6837\u672c\u6e05\u5355\uff1aR1(\u4e0d\u52a0\u6392\u5e8f) \u4e0e R2(\u52a0\u6392\u5e8f) \u5fc5\u987b\u6d88\u8d39\u5b8c\u5168\u76f8\u540c\u7684\u8fd9\u6279\u8fdd\u89c4\u6837\u672c\uff08\u542b\u539f\u59cb\u56fe\u4e0e\u7f16\u8f91\u53c2\u6570\uff09\uff0c\u4e24\u7ec4\u914d\u7f6e\u53ea\u5dee\u6392\u5e8f\u635f\u5931\u5f00\u5173\u3002\u6837\u672c\u5373 pair_manifest.json \u4e2d screw_bag/train \u7528\u9014\u5bf9\u7684 invalid \u8f93\u5165\uff08v2\uff1atrain \u7528\u9014\u6309 B \u5b98\u65b9\u5212\u5206\u6e05\u5355\u9010\u56fe\u6307\u5b9a\uff09\u3002",
+ "n_pairs": 70,
+ "entries": [
+  {
+   "pair_id": "SB-TR-000-A",
+   "source_id": "sb-train-000",
+   "source_path": "screw_bag/train/good/000.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-000-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/000.png",
+   "sha256": "b328bce527b1e74534f266f9b4d341b38f571ca54587b00db8f0c62961207821"
+  },
+  {
+   "pair_id": "SB-TR-000-B",
+   "source_id": "sb-train-000",
+   "source_path": "screw_bag/train/good/000.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-000-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/000.png",
+   "sha256": "e7b82a71ee8ec3fcf0db4d8d0915fa9aba3511fc9113a99e0af9deeed62ecf7e"
+  },
+  {
+   "pair_id": "SB-TR-001-A",
+   "source_id": "sb-train-001",
+   "source_path": "screw_bag/train/good/001.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-001-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/001.png",
+   "sha256": "283b40243f8ac51ca225ec4220f0fae0ec906935317df622ccbdf1fbdae31965"
+  },
+  {
+   "pair_id": "SB-TR-002-A",
+   "source_id": "sb-train-002",
+   "source_path": "screw_bag/train/good/002.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-002-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/002.png",
+   "sha256": "1b598d335be37c6b1ed9d0661a74c86ff2397537271db6343c39030c8b1e080b"
+  },
+  {
+   "pair_id": "SB-TR-004-A",
+   "source_id": "sb-train-004",
+   "source_path": "screw_bag/train/good/004.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-004-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/004.png",
+   "sha256": "76760ad4da72c784f5a45df97bfb6dcc75a192453ff2d74a4d16a90e70ae73ed"
+  },
+  {
+   "pair_id": "SB-TR-005-A",
+   "source_id": "sb-train-005",
+   "source_path": "screw_bag/train/good/005.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-005-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/005.png",
+   "sha256": "b0807b2e535f8f2461543afbf68f6e5cef6ca84271adef5c84e79fdd344c474a"
+  },
+  {
+   "pair_id": "SB-TR-006-A",
+   "source_id": "sb-train-006",
+   "source_path": "screw_bag/train/good/006.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-006-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/006.png",
+   "sha256": "0b87b17b9a9aa55d458ec9829940ae3bf3c5a787a4de8c7f74dbdad16b0a0c30"
+  },
+  {
+   "pair_id": "SB-TR-006-B",
+   "source_id": "sb-train-006",
+   "source_path": "screw_bag/train/good/006.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-006-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/006.png",
+   "sha256": "45468d395c048a60612ba0338ce6d0b6a813dd41281b690c0dce9d907922627a"
+  },
+  {
+   "pair_id": "SB-TR-007-A",
+   "source_id": "sb-train-007",
+   "source_path": "screw_bag/train/good/007.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-007-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/007.png",
+   "sha256": "2a92c561a387088ebfb46dc01f935a9ea9ca22f5fd62ec905f0e1a509b1671b4"
+  },
+  {
+   "pair_id": "SB-TR-008-A",
+   "source_id": "sb-train-008",
+   "source_path": "screw_bag/train/good/008.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-008-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/008.png",
+   "sha256": "292d7cd2d2c1081c303d237ebcfcf76cdfbb560768136867951beb04fb51cca5"
+  },
+  {
+   "pair_id": "SB-TR-009-A",
+   "source_id": "sb-train-009",
+   "source_path": "screw_bag/train/good/009.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-009-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/009.png",
+   "sha256": "c2045725a0cbb98e664e6d6a66e647509ed84e4513bb72fe6b72b505c5cfaf4e"
+  },
+  {
+   "pair_id": "SB-TR-009-B",
+   "source_id": "sb-train-009",
+   "source_path": "screw_bag/train/good/009.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-009-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/009.png",
+   "sha256": "81af18c0462319b53f5f31e88f3b81920bd1015cffafa6d8d7e93eb6409b9eae"
+  },
+  {
+   "pair_id": "SB-TR-011-A",
+   "source_id": "sb-train-011",
+   "source_path": "screw_bag/train/good/011.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-011-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/011.png",
+   "sha256": "59d750974fea2bc7daea34590bd8d95bdf93e7071dd1656b614991acd170679d"
+  },
+  {
+   "pair_id": "SB-TR-014-A",
+   "source_id": "sb-train-014",
+   "source_path": "screw_bag/train/good/014.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-014-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/014.png",
+   "sha256": "7b211b79b889015b3cfa565756bbf61957f0667678e76463eb85ae1ffd8532b5"
+  },
+  {
+   "pair_id": "SB-TR-017-A",
+   "source_id": "sb-train-017",
+   "source_path": "screw_bag/train/good/017.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-017-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/017.png",
+   "sha256": "d8bd8dad7b3a0ee3418497666d878c58e1fcf2b0e1698cda20009ddd33bd9e16"
+  },
+  {
+   "pair_id": "SB-TR-019-A",
+   "source_id": "sb-train-019",
+   "source_path": "screw_bag/train/good/019.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-019-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/019.png",
+   "sha256": "01021701c35a10d22d5fad63b2325b3a84f480a1d6a403e4e8b09c190d99661f"
+  },
+  {
+   "pair_id": "SB-TR-021-A",
+   "source_id": "sb-train-021",
+   "source_path": "screw_bag/train/good/021.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-021-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/021.png",
+   "sha256": "5a6454c4d9d27d91586ead6d61165f8374faa0271189cd8885654bac013fdde7"
+  },
+  {
+   "pair_id": "SB-TR-021-B",
+   "source_id": "sb-train-021",
+   "source_path": "screw_bag/train/good/021.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-021-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/021.png",
+   "sha256": "927ec0d2ce9c8b8f3aa15832390d4f5f60b41291eacd5d34122842e493d3d69c"
+  },
+  {
+   "pair_id": "SB-TR-024-A",
+   "source_id": "sb-train-024",
+   "source_path": "screw_bag/train/good/024.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-024-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/024.png",
+   "sha256": "d3de690e5f9586fe3c971126db1f8a6953a8f53e639c3635686a9d646ede7cfc"
+  },
+  {
+   "pair_id": "SB-TR-024-B",
+   "source_id": "sb-train-024",
+   "source_path": "screw_bag/train/good/024.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-024-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/024.png",
+   "sha256": "67b6d84788023b4a7a5c3c64707e14af2efd5d0c269ff2a6ad4a56322d61195d"
+  },
+  {
+   "pair_id": "SB-TR-025-A",
+   "source_id": "sb-train-025",
+   "source_path": "screw_bag/train/good/025.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-025-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/025.png",
+   "sha256": "24437b18eb491d22644267c5ea7fe7a73777a5ae60cbcecca7efe8a13e6bbfb7"
+  },
+  {
+   "pair_id": "SB-TR-026-A",
+   "source_id": "sb-train-026",
+   "source_path": "screw_bag/train/good/026.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-026-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/026.png",
+   "sha256": "d923ddd251be65bf16003f2b3399fb017a422c032d9de9843716f3fb113b2b18"
+  },
+  {
+   "pair_id": "SB-TR-027-A",
+   "source_id": "sb-train-027",
+   "source_path": "screw_bag/train/good/027.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-027-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/027.png",
+   "sha256": "bd3a848c7ee503d9ef4a05271a5b09ce2ea0eda21174c92868ebb1a87e491fbe"
+  },
+  {
+   "pair_id": "SB-TR-029-A",
+   "source_id": "sb-train-029",
+   "source_path": "screw_bag/train/good/029.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-029-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/029.png",
+   "sha256": "adaf451deda36146940e17b629eacea869497e7c306013d6f6ebf9fc38376d74"
+  },
+  {
+   "pair_id": "SB-TR-030-A",
+   "source_id": "sb-train-030",
+   "source_path": "screw_bag/train/good/030.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-030-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/030.png",
+   "sha256": "164cec032dbe1f01e1301e786ed7ce39a899e281f11d2ef36c1a814718f4b3e7"
+  },
+  {
+   "pair_id": "SB-TR-031-A",
+   "source_id": "sb-train-031",
+   "source_path": "screw_bag/train/good/031.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-031-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/031.png",
+   "sha256": "6fedc52c4b40dfac479c0c3deeb517e46a0941c68dd76455a65bddd0ff6e145a"
+  },
+  {
+   "pair_id": "SB-TR-032-A",
+   "source_id": "sb-train-032",
+   "source_path": "screw_bag/train/good/032.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-032-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/032.png",
+   "sha256": "b00c4cee944736b98604367b1c6d8de4406f4ec24ae64f6c401445da975c2c49"
+  },
+  {
+   "pair_id": "SB-TR-034-A",
+   "source_id": "sb-train-034",
+   "source_path": "screw_bag/train/good/034.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-034-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/034.png",
+   "sha256": "3d583f9b34e329f05df730b414899f356ac761e50a800b784343b5dc10c62f8b"
+  },
+  {
+   "pair_id": "SB-TR-037-A",
+   "source_id": "sb-train-037",
+   "source_path": "screw_bag/train/good/037.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-037-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/037.png",
+   "sha256": "2a5cf88bc57907f39d805dde08eb62b67b244aa07a6452f26d0eaf4b5cc8aefa"
+  },
+  {
+   "pair_id": "SB-TR-038-A",
+   "source_id": "sb-train-038",
+   "source_path": "screw_bag/train/good/038.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-038-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/038.png",
+   "sha256": "eaab695079074e74288a60cdd65823a5f9c0ae89cf705a9269d7871f67f55ce9"
+  },
+  {
+   "pair_id": "SB-TR-039-A",
+   "source_id": "sb-train-039",
+   "source_path": "screw_bag/train/good/039.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-039-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/039.png",
+   "sha256": "a3fec27a236b11b65f6f7012a6440a3a6349e3a87f204633c65bd2a7dfce4b76"
+  },
+  {
+   "pair_id": "SB-TR-039-B",
+   "source_id": "sb-train-039",
+   "source_path": "screw_bag/train/good/039.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-039-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/039.png",
+   "sha256": "070567514a8ca5a4ba26e48b87cef80b4e417670f42ac941b56960e2f5cc14b3"
+  },
+  {
+   "pair_id": "SB-TR-041-A",
+   "source_id": "sb-train-041",
+   "source_path": "screw_bag/train/good/041.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-041-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/041.png",
+   "sha256": "d315f70f1d072359fa689a52ea4d8e266ef4f4131163b73f52c901525ccd7d3b"
+  },
+  {
+   "pair_id": "SB-TR-042-A",
+   "source_id": "sb-train-042",
+   "source_path": "screw_bag/train/good/042.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-042-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/042.png",
+   "sha256": "28e5a63f03622d4f12eecd8b8ed64549cb39888a40b9a4a6ca8a53a6f5173fa3"
+  },
+  {
+   "pair_id": "SB-TR-043-A",
+   "source_id": "sb-train-043",
+   "source_path": "screw_bag/train/good/043.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-043-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/043.png",
+   "sha256": "c6ab7d1aba91e068ac47f6668eb2c01332df744d74aa62dcef300dc6c28c81fb"
+  },
+  {
+   "pair_id": "SB-TR-045-A",
+   "source_id": "sb-train-045",
+   "source_path": "screw_bag/train/good/045.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-045-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/045.png",
+   "sha256": "0f20e7becfdb3436490807e099ad0004b4a394838c300cecb5bb25ecc0d10dbc"
+  },
+  {
+   "pair_id": "SB-TR-045-B",
+   "source_id": "sb-train-045",
+   "source_path": "screw_bag/train/good/045.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-045-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/045.png",
+   "sha256": "8a867e9bc77d062417c0e33ccedf1a3e0a512a0b0b83383c3690675fa5a83f2e"
+  },
+  {
+   "pair_id": "SB-TR-046-A",
+   "source_id": "sb-train-046",
+   "source_path": "screw_bag/train/good/046.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-046-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/046.png",
+   "sha256": "48cb08cc3d89ae1fa0a9b573ecd61a8bfdb75c0385acce583ec009082f403080"
+  },
+  {
+   "pair_id": "SB-TR-048-A",
+   "source_id": "sb-train-048",
+   "source_path": "screw_bag/train/good/048.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-048-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/048.png",
+   "sha256": "d8710da5eec59e613405174c1e97c96a380c17046355b38f3787f83a20bab863"
+  },
+  {
+   "pair_id": "SB-TR-048-B",
+   "source_id": "sb-train-048",
+   "source_path": "screw_bag/train/good/048.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-048-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/048.png",
+   "sha256": "3bb542e2d9fb1797d1cdca7115f4df064d4fea58b4d65d558421461657f63905"
+  },
+  {
+   "pair_id": "SB-TR-053-A",
+   "source_id": "sb-train-053",
+   "source_path": "screw_bag/train/good/053.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-053-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/053.png",
+   "sha256": "9450c7b5bf486080192a944891d601f136e02bf22611b6c12c6d26a55fdcb199"
+  },
+  {
+   "pair_id": "SB-TR-054-A",
+   "source_id": "sb-train-054",
+   "source_path": "screw_bag/train/good/054.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-054-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/054.png",
+   "sha256": "81deb119c60754115d099fcbd7e6fc0a8cbcddab20ec4864347ffb20cada34e0"
+  },
+  {
+   "pair_id": "SB-TR-054-B",
+   "source_id": "sb-train-054",
+   "source_path": "screw_bag/train/good/054.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-054-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/054.png",
+   "sha256": "0f363b270804e51ad65688fef8e0b6c5c8736bbe386be0affc5aae04eda27b9f"
+  },
+  {
+   "pair_id": "SB-TR-055-A",
+   "source_id": "sb-train-055",
+   "source_path": "screw_bag/train/good/055.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-055-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/055.png",
+   "sha256": "7534082ec37912b54fe8fa97232f46693dfcb39f8dd0f52c82741c09f45b8d56"
+  },
+  {
+   "pair_id": "SB-TR-056-A",
+   "source_id": "sb-train-056",
+   "source_path": "screw_bag/train/good/056.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-056-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/056.png",
+   "sha256": "775544f4408b72c23930fbf91d445cb392506c3eb0f52668d85d726bf5d7e622"
+  },
+  {
+   "pair_id": "SB-TR-058-A",
+   "source_id": "sb-train-058",
+   "source_path": "screw_bag/train/good/058.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-058-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/058.png",
+   "sha256": "79a0a6bad36e947a188f15e9968211edda675cae0c56b29c1b9225ed2c20f96b"
+  },
+  {
+   "pair_id": "SB-TR-060-A",
+   "source_id": "sb-train-060",
+   "source_path": "screw_bag/train/good/060.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-060-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/060.png",
+   "sha256": "b8971eb20a2442b1e1ef9aad3ae25fce7482c2470633e8bde62106e5ee4d3fd8"
+  },
+  {
+   "pair_id": "SB-TR-060-B",
+   "source_id": "sb-train-060",
+   "source_path": "screw_bag/train/good/060.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-060-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/060.png",
+   "sha256": "ef138e51bc89db240ee4e56d49d6b388e284a797a01222e89a1032e264d8d3c6"
+  },
+  {
+   "pair_id": "SB-TR-061-A",
+   "source_id": "sb-train-061",
+   "source_path": "screw_bag/train/good/061.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-061-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/061.png",
+   "sha256": "fa4ec18919956f210adbefde34b4523de752db47cffbddd4d3135b529aab36ca"
+  },
+  {
+   "pair_id": "SB-TR-062-A",
+   "source_id": "sb-train-062",
+   "source_path": "screw_bag/train/good/062.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-062-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/062.png",
+   "sha256": "d9bb79c1870321512d3f49685b0809136451b62c578c5da6271daea9d59942be"
+  },
+  {
+   "pair_id": "SB-TR-064-A",
+   "source_id": "sb-train-064",
+   "source_path": "screw_bag/train/good/064.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-064-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/064.png",
+   "sha256": "bb1cb8b7f0c4b1b3a1fba0f9a10bc923936a07e175f62cd7e17093975ace210d"
+  },
+  {
+   "pair_id": "SB-TR-065-A",
+   "source_id": "sb-train-065",
+   "source_path": "screw_bag/train/good/065.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-065-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/065.png",
+   "sha256": "ecac88058dc66c71845a51cc05e00091f482cbaf53dea852726739c413e53c83"
+  },
+  {
+   "pair_id": "SB-TR-084-A",
+   "source_id": "sb-train-084",
+   "source_path": "screw_bag/train/good/084.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-084-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/084.png",
+   "sha256": "d7818e61d308ec9081c2cc391e6f6ef96db6be816d6c8d4c463cf6bb1e4e2271"
+  },
+  {
+   "pair_id": "SB-TR-084-B",
+   "source_id": "sb-train-084",
+   "source_path": "screw_bag/train/good/084.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-084-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/084.png",
+   "sha256": "a84772931a793dd2c47b17a03c50d30a73df9dbf645fb9e4ebd1724b991c3608"
+  },
+  {
+   "pair_id": "SB-TR-086-A",
+   "source_id": "sb-train-086",
+   "source_path": "screw_bag/train/good/086.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-086-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/086.png",
+   "sha256": "6c6a911c602a736bdf06ded168b09c78003918fcb91689edacc849b93b12bcb4"
+  },
+  {
+   "pair_id": "SB-TR-090-A",
+   "source_id": "sb-train-090",
+   "source_path": "screw_bag/train/good/090.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-090-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/090.png",
+   "sha256": "40b446aee461c91dee5becf879b04a2a8e7ca8e8746b68002e0af09f7ef249bc"
+  },
+  {
+   "pair_id": "SB-TR-091-A",
+   "source_id": "sb-train-091",
+   "source_path": "screw_bag/train/good/091.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-091-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/091.png",
+   "sha256": "f403d76d4524d678cb50506ec7e782d78963c5f6ae19d4d2c583941d2a0df128"
+  },
+  {
+   "pair_id": "SB-TR-092-A",
+   "source_id": "sb-train-092",
+   "source_path": "screw_bag/train/good/092.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-092-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/092.png",
+   "sha256": "6775b787d2c93793dd58399b52f91f50cf9c2fd5e2114af0298425933c4c1132"
+  },
+  {
+   "pair_id": "SB-TR-095-A",
+   "source_id": "sb-train-095",
+   "source_path": "screw_bag/train/good/095.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-095-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/095.png",
+   "sha256": "76e31e48aad4f997f68895acd517f039e5baa1c4adbbc8d35b19b8de6ccf1809"
+  },
+  {
+   "pair_id": "SB-TR-096-A",
+   "source_id": "sb-train-096",
+   "source_path": "screw_bag/train/good/096.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-096-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/096.png",
+   "sha256": "32eb61f6faed5126412b0a7bbe6531bda8cb33974ba768959561a0c7f62ed4c4"
+  },
+  {
+   "pair_id": "SB-TR-097-A",
+   "source_id": "sb-train-097",
+   "source_path": "screw_bag/train/good/097.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-097-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/097.png",
+   "sha256": "78cf474c877ac2af73e836368967b55c7c8e35a18e1c78a6012bed532170c0c8"
+  },
+  {
+   "pair_id": "SB-TR-099-A",
+   "source_id": "sb-train-099",
+   "source_path": "screw_bag/train/good/099.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-099-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/099.png",
+   "sha256": "30302923c48c628bce43123c9c811219db049803fb3f870fc8023c30b13384bd"
+  },
+  {
+   "pair_id": "SB-TR-099-B",
+   "source_id": "sb-train-099",
+   "source_path": "screw_bag/train/good/099.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-099-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/099.png",
+   "sha256": "81d6ab7c8ac6ac49af71115edbf9804dd85c16daa37812d9c31bf63aa33d32e3"
+  },
+  {
+   "pair_id": "SB-TR-100-A",
+   "source_id": "sb-train-100",
+   "source_path": "screw_bag/train/good/100.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-100-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/100.png",
+   "sha256": "407c8ebefbdba5742454bd6ede78116f61d810085558691dfcd9e5aa499711d0"
+  },
+  {
+   "pair_id": "SB-TR-102-A",
+   "source_id": "sb-train-102",
+   "source_path": "screw_bag/train/good/102.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-102-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/102.png",
+   "sha256": "21c523348884af96f7dd174a5c5bb4db785649888bf5a3c4270726c894b19fa7"
+  },
+  {
+   "pair_id": "SB-TR-102-B",
+   "source_id": "sb-train-102",
+   "source_path": "screw_bag/train/good/102.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-102-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/102.png",
+   "sha256": "1028dc704b4b7144dd38a33fc1f8d2deee9c88cc36908c0ad552d07ce9b2a87b"
+  },
+  {
+   "pair_id": "SB-TR-103-A",
+   "source_id": "sb-train-103",
+   "source_path": "screw_bag/train/good/103.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-103-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/103.png",
+   "sha256": "0a56d27f1e11b3339506f77a49880f8fc4b42584ed3ae3d5f8ad44bf5ce5c3ad"
+  },
+  {
+   "pair_id": "SB-TR-105-A",
+   "source_id": "sb-train-105",
+   "source_path": "screw_bag/train/good/105.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-105-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/105.png",
+   "sha256": "11388fcbc36499716a84ffc56d98809c809abe600af823a989c6e5acda0e9eea"
+  },
+  {
+   "pair_id": "SB-TR-105-B",
+   "source_id": "sb-train-105",
+   "source_path": "screw_bag/train/good/105.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-105-B.png",
+   "invalid_op": "replace_short_screw_with_long_screw",
+   "original_path": "data/composition_maps/screw_bag/train/105.png",
+   "sha256": "d1dd8babd4a05bdf29eeac32bbe07cdb0c4a1dfdecfd20c4cd98f8b195405910"
+  },
+  {
+   "pair_id": "SB-TR-106-A",
+   "source_id": "sb-train-106",
+   "source_path": "screw_bag/train/good/106.png",
+   "invalid_path": "data/edits/screw_bag/invalid/SB-TR-106-A.png",
+   "invalid_op": "remove",
+   "original_path": "data/composition_maps/screw_bag/train/106.png",
+   "sha256": "4601c312174e4e2a2b7e3081fd6661d45c9a5ff00c47430f547aa5d6138bea51"
+  }
+ ]
+}
