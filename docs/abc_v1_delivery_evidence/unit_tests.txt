@@ -1,0 +1,14 @@
+test_paths_cannot_escape_input_root (test_abc_contract.ContractTests.test_paths_cannot_escape_input_root) ... ok
+test_review_provenance_file_integrity_and_held_out_sources (test_abc_contract.ContractTests.test_review_provenance_file_integrity_and_held_out_sources) ... ok
+test_same_sample_control_and_ranking_share_entire_schedule (test_abc_contract.ContractTests.test_same_sample_control_and_ranking_share_entire_schedule) ... ok
+test_sb0_can_start_without_pairs_but_sb4_cannot (test_abc_contract.ContractTests.test_sb0_can_start_without_pairs_but_sb4_cannot) ... ok
+test_schedule_prefix_stable_and_source_epoch_covers_training_only (test_abc_contract.ContractTests.test_schedule_prefix_stable_and_source_epoch_covers_training_only) ... ok
+test_source_leakage_rejected (test_abc_contract.ContractTests.test_source_leakage_rejected) ... ok
+test_base_losses_supply_gradients_without_added_objectives (test_abc_torch.LossTests.test_base_losses_supply_gradients_without_added_objectives) ... ok
+test_ranking_direction_and_consistency (test_abc_torch.LossTests.test_ranking_direction_and_consistency) ... ok
+test_raw_score_keeps_gradients_through_both_models (test_abc_torch.LossTests.test_raw_score_keeps_gradients_through_both_models) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.431s
+
+OK

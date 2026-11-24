@@ -1,0 +1,23 @@
+{
+  "representation": "salad_author_indices_v1",
+  "description": "仅为接口示例；不是审核通过的数据。B 填入真实文件和人工审核记录后才能用于训练。",
+  "pairs": [
+    {
+      "pair_id": "SB_REPLACE_WITH_REAL_ID",
+      "purpose": "train",
+      "source_path": "screw_bag/train/good/REPLACE.png",
+      "source_map_sha256": "从 author_map_hashes.json 复制对应源图的真实 SHA256",
+      "valid_path": "images/REPLACE_valid.png",
+      "valid_sha256": "实际文件的 SHA256",
+      "invalid_path": "images/REPLACE_invalid.png",
+      "invalid_sha256": "实际文件的 SHA256",
+      "anomaly_mask_path": "images/REPLACE_mask.png",
+      "anomaly_mask_sha256": "实际文件的 SHA256",
+      "review_status": "pending",
+      "reviewer": "",
+      "review_date": "",
+      "review_reason": "",
+      "rule_reference": ""
+    }
+  ]
+}

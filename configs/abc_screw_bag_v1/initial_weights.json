@@ -1,0 +1,39 @@
+{
+  "category": "screw_bag",
+  "role": "selected_common_initialization_for_ABC_SB_CONTINUE_V1",
+  "optimizer_state": "not included in this five-file bundle",
+  "model_loading_performed": false,
+  "members": [
+    {
+      "archive_member": "screw_bag/autoencoder_final.pth",
+      "bytes": 4405058,
+      "zip_crc32": "e7c96957",
+      "sha256": "a0c4bbe8a04b5f4763b5d57a12d16116cf92956319dde0af8b712647412c77e2"
+    },
+    {
+      "archive_member": "screw_bag/teacher_final.pth",
+      "bytes": 32114834,
+      "zip_crc32": "9ad58ce8",
+      "sha256": "ef2d2e5b6322153326f631e717a16be76e1c80a521571b8644ab3f0a4dc4c3e4"
+    },
+    {
+      "archive_member": "screw_bag/student_final.pth",
+      "bytes": 46470290,
+      "zip_crc32": "971d92be",
+      "sha256": "63a322e82f14d1a478456559234c915f83ed42040dd5d2cee62f43bcb025ed38"
+    },
+    {
+      "archive_member": "screw_bag/comp_autoencoder_final.pth",
+      "bytes": 126408338,
+      "zip_crc32": "0625adec",
+      "sha256": "5c8f9e00acbaf4ffd246e75d0da7371a10dca7b2ef17ab46051cc8e9c5c8ed56"
+    },
+    {
+      "archive_member": "screw_bag/comp_unet_final.pth",
+      "bytes": 51145110,
+      "zip_crc32": "f3db49ea",
+      "sha256": "9d7e89cd8d1235c114b9bbd8e0448ea8c2b7396987bd25b92df9d69b23581c92"
+    }
+  ],
+  "verification": "ZIP streaming CRC/length and SHA256; no torch.load or gradient checks"
+}
