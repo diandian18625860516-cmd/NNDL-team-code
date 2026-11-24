@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "protocol_id": "ABC_SB_CONTINUE_V1",
+  "category": "screw_bag",
+  "stage": "continued_training",
+  "seed": 42,
+  "steps": 5000,
+  "smoke_steps": 100,
+  "smoke_statistics_sources": 16,
+  "batch_size": 1,
+  "image_size": 256,
+  "workers": 0,
+  "checkpoint_every": 250,
+  "log_every": 10,
+  "device": "cuda",
+  "appearance_lr": 0.0001,
+  "composition_lr": 1e-05,
+  "weight_decay": 1e-05,
+  "scheduler_step": 4750,
+  "scheduler_gamma": 0.1,
+  "imagenet_penalty": false,
+  "photo_loss": false,
+  "anomaly_probability": 0.5,
+  "reviewed_replacement_fraction_on_eligible_slots": 1.0,
+  "rank_margin": 0.1,
+  "consistency_formula": "mean((raw_composition_score(valid)-raw_composition_score(original))**2)",
+  "ranking_formula": "mean(relu(0.1 + raw_composition_score(valid)-raw_composition_score(invalid)))",
+  "score_definition": "max sigmoid of composition UNet anomaly map; range [0,1]; training path has gradients",
+  "class_weight_mode": "preserve_author_onehot_count_behavior",
+  "source_roles": "source_roles.json",
+  "map_hashes": "author_map_hashes.json",
+  "initial_weights": "initial_weights.json",
+  "groups": {
+    "SB0": {
+      "owner": "A",
+      "sample_mode": "author",
+      "spatial_weight": 0.0,
+      "rank_weight": 0.0
+    },
+    "SB4": {
+      "owner": "A",
+      "sample_mode": "reviewed",
+      "spatial_weight": 0.0,
+      "rank_weight": 0.0
+    },
+    "SB1": {
+      "owner": "B",
+      "sample_mode": "author",
+      "spatial_weight": 1.0,
+      "rank_weight": 0.0
+    },
+    "SB2": {
+      "owner": "B",
+      "sample_mode": "reviewed",
+      "spatial_weight": 0.0,
+      "rank_weight": 1.0
+    },
+    "SB3": {
+      "owner": "C",
+      "sample_mode": "reviewed",
+      "spatial_weight": 1.0,
+      "rank_weight": 1.0
+    }
+  },
+  "formal_protocol_status": "fixed_v1_engineering_validation_pending",
+  "budget_note": "5000 additional optimizer updates chosen in advance as project budget, not a measured optimum or full-paper training budget. Change only by issuing a new common protocol version."
+}

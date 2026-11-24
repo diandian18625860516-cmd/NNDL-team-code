@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-24",
+  "protocol": "ABC_SB_CONTINUE_V1",
+  "unit_tests_passed": 9,
+  "unit_tests_skipped": 0,
+  "loss_test_runtime": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "device": "cpu"
+  },
+  "required_formal_runtime": {
+    "torch": "2.6.0",
+    "torchvision": "0.21.0",
+    "device": "cuda"
+  },
+  "source_files_syntax_checked": 13,
+  "sb0_real_inputs_passed": true,
+  "full_salad_smoke_training_performed": false,
+  "real_model_checkpoint_resume_verified": false,
+  "formal_training_performed": false,
+  "post_training_evaluation_performed": false,
+  "github_push_performed": false
+}

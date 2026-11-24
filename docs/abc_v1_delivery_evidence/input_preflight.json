@@ -1,0 +1,9 @@
+{
+  "input_files_passed": true,
+  "group": "SB0",
+  "optimization_sources": 335,
+  "training_pairs": 0,
+  "formal_steps": 5000,
+  "seed": 42,
+  "model_runtime_tested": false
+}

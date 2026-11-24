@@ -1,0 +1,10 @@
+# Python 3.10 or 3.11. Install in a dedicated environment on the training machine.
+# CUDA wheel selection is documented in docs/07_A_统一训练入口与交付.md.
+torch==2.6.0
+torchvision==0.21.0
+numpy==1.26.4
+scipy==1.14.1
+Pillow==11.1.0
+imgaug==0.4.0
+opencv-python==4.10.0.84
+positional-encodings==6.0.3
