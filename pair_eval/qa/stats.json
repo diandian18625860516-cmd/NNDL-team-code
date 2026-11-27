@@ -1,0 +1,16 @@
+{
+ "screw_bag": {
+  "sources_ok": 81,
+  "sources_failed": 279,
+  "pairs_ok_A": 81,
+  "pairs_ok_B": 14,
+  "pairs_failed_B": 5
+ },
+ "pushpins": {
+  "sources_ok": 332,
+  "sources_failed": 40,
+  "pairs_failed_A": 23,
+  "pairs_ok_B": 81,
+  "pairs_ok_A": 309
+ }
+}

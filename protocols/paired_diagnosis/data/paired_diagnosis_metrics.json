@@ -1,0 +1,75 @@
+{
+ "protocol_id": "paired_diagnosis_protocol_v1",
+ "maintainer": "A",
+ "purpose": "回答 RQ2：模型区分的是规则，还是\"图被改过\"",
+ "units": {
+  "primary": "源图数（source images）",
+  "secondary": "编辑对数（edit pairs）",
+  "rule": "同时报告两个单位；一张源图派生多对不得当作多个独立源图；平分（tie）单列，不计入胜率分子或分母"
+ },
+ "metrics": [
+  {
+   "id": "M1",
+   "name": "违规胜率",
+   "formula": "P( s(invalid) > s(valid) )",
+   "ties": "单列 tie_count；报告 win / tie / lose 三计数",
+   "notes": "主指标；同分不并入胜率"
+  },
+  {
+   "id": "M2",
+   "name": "配对分数差",
+   "formula": "Δ = s(invalid) − s(valid)",
+   "report": "中位数、均值、最小/最大与四分位；不得只报均值"
+  },
+  {
+   "id": "M3",
+   "name": "合法位移代价",
+   "formula": "s(valid) − s(original)",
+   "report": "中位数与分布；合法变化不应显著抬分；阈值事先由正常验证数据确定且变换前后不重新校准"
+  }
+ ],
+ "baseline": {
+  "id": "DIAG-PP-COUNT",
+  "applies_to": "pushpins",
+  "definition": "只统计全盒图钉总数的规则基线",
+  "expected": "A 对两侧均 15 枚 → 基线必须判\"正常\"（无法区分格内/跨格）；B 对漏装 14 枚 → 检出",
+  "role": "证明配对诊断检验的是空间分配规则而非计数；它是诊断参照，不替代 SALAD，也不是第四个深度模型"
+ },
+ "run_requirements": {
+  "pair_selection": {
+   "purpose": "final_diagnostic",
+   "review_status": "approved",
+   "note": "pending/rejected 对计数但不进分母；全部未通过则不输出性能指标"
+  },
+  "score_branch": "composition（组成图变体当前只接组成分支；结果标注为组成分支诊断，不得写成 RGB 系统已更鲁棒）",
+  "required_json_fields": [
+   "model_seen_source_paths",
+   "seen_sources_complete",
+   "protocol_frozen"
+  ],
+  "protocol_frozen": "最终诊断必须 true（由 A/D 确认规则与参数冻结后才可跑）；开发诊断可为 false",
+  "model_seen_source_paths": "起点检查点训练中见过的完整原始 RGB 路径数组；本清单全部源图在 train/good（SALAD train 划分，必然被见过），必须完整列入；官方训练若含 validation 亦须列入；未知不能填空数组冒充"
+ },
+ "pair_construction_rules": {
+  "source": "D pair_manifest.json v2.1（pair_id 唯一；先固定用途后生成变体；同一源图及全部变体只留同一用途）",
+  "pushpins_A": "valid=translate_within_cell（格内平移），invalid=translate_to_adjacent_cell（同一枚图钉跨格移动）：两侧总数均 15，一格空一格两枚；面积与编辑流程完全一致（edit_area_identical），跨格距离必然更大 → 记录于 distance_note，不忽略",
+  "pushpins_B": "valid=格内平移，invalid=remove_pin（漏装，15→14）——训练用扩展违规类型",
+  "screw_bag_A": "valid=translate（袋内合法重摆），invalid=remove（同部件真正移除）：同部件、同面积、edit_area_identical；组成计数 controls 逐项记录",
+  "screw_bag_B": "valid=重摆，invalid=replace_short_screw_with_long_screw（总数 6 不变，规格 1长+1短→2长）：总数不变但规格错",
+  "matching": "尽量匹配移动距离与修改面积；无法匹配时记录差异（distance_note/wall_overlap_px/controls），不得静默忽略"
+ },
+ "r1_r2_control": {
+  "fixed_list": "r1_r2_sample_list.json（70 条 SB train 违规输入，含 sha256）",
+  "R0": "原版 SALAD，原版组件级合成机制",
+  "R1": "核查后违规样本、不加排序：相近合成样本预算下替换预先规定的样本；正常样本、训练步数与 R0/R2 一致",
+  "R2": "与 R1 完全相同，仅打开排序损失；三组均关闭一致性，避免干扰解释",
+  "interpretation": "R1 vs R2 → 排序损失的作用；R0 vs R1 → 更换样本方案的作用；不得把样本方案收益算给损失"
+ },
+ "conclusion_wording_redlines": [
+  "不得把\"识别编辑痕迹/违规分更高\"写成\"理解规则\"",
+  "不得把组成图配对诊断写成 RGB 系统鲁棒性",
+  "两类（或三类）的结论不得写成全五类普遍有效",
+  "作者权重成绩列为参照，不替代同预算对照",
+  "未跑通的模块（如光照一致性）不得写成完成"
+ ]
+}
